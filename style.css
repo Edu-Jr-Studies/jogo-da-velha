@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(68, 68, 68);
+}
+
+.container{
+    background: rgb(48, 48, 48);
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5% auto auto auto;
+}
+
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background: white;
+    margin: 5px 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado p{
+    font-size: 40px;
+}
