@@ -3,6 +3,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    font-family: 'Vujahday Script', cursive;
 }
 
 body{
@@ -51,6 +52,13 @@ body{
     font-size: 40px;
 }
 
+.ganhador button{
+    font-size: 20px;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
 .ativado{
     display: flex;
 }
