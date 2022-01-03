@@ -53,9 +53,21 @@ function vencedor(dado)
 }
 
 function gameFinalizado(dado = null){ /*essa tecnica do parametro dessa forma (dado = null), faz com que se tiver algum dado ent a função recebe esse dado, caso contrario ela recebe nada! */
-    dado && alert(`Jogador ${dado} ganhou!`)
-    !dado && console.log('Deu Velha!');
-    rendenizaDenovo();
+
+    if(dado)
+    {
+        document.querySelector('.ganhador h1')
+            .innerText = `Jogador " ${dado} " ganhou!`;
+    }
+
+    if (!dado) 
+    {
+        document.querySelector('.ganhador h1')
+            .innerText = 'Deu Velha!';
+    }
+    
+    ganhador()
+    //rendenizaDenovo();
 }
 
 function checarEmpate()
@@ -69,6 +81,14 @@ function checarEmpate()
     }
 
     return x + o == 9;
+}
+
+function ganhador(dado = null)
+{
+    document.querySelector('.ganhador')
+        .classList.toggle('ativado');
+
+    if(dado) rendenizaDenovo();
 }
 
 function rendenizaDenovo()

@@ -32,3 +32,25 @@ body{
 .quadrado p{
     font-size: 40px;
 }
+
+
+.ganhador{
+    background: rgba(0, 0, 0, 0.822);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ganhador h1{
+    font-size: 40px;
+}
+
+.ativado{
+    display: flex;
+}

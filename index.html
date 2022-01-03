@@ -8,6 +8,7 @@
     <title>Jogo da Velha</title>
 </head>
 <body>
+    
     <div class="container">
         <div class="quadrado " onclick="jogada('0')" id="_0"></div>
         <div class="quadrado " onclick="jogada('1')" id="_1"></div>
@@ -18,7 +19,11 @@
         <div class="quadrado " onclick="jogada('6')" id="_6"></div>
         <div class="quadrado " onclick="jogada('7')" id="_7"></div>
         <div class="quadrado " onclick="jogada('8')" id="_8"></div>
+    </div>
 
+    <div class="ganhador ">
+        <h1>Voçê Ganhou!</h1>
+        <button onclick="ganhador(true)">Jogar Novamente</button>
     </div>
 
     <script src="script.js"></script>
